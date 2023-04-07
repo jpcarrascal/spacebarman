@@ -1,0 +1,327 @@
+/* COLORS:
+Dark background: #171719;
+Blue background: #1a6a89;
+Light blue: #33a8c1;
+Orange: #ff7223;
+*/
+
+* { margin: 0; padding: 0; border: 0; }
+
+a
+{
+    color: #33a8c1;
+}
+
+a:hover
+{
+    color: #FFF;
+}
+
+p, h2
+{
+    margin-bottom: 1em;
+}
+
+
+html
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: century-gothic, sans-serif;
+    font-size: 1em;
+    background-color: #1a6a89;
+    background: url("images/Spacebarman-mad_sci-hero.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #CCC;
+    background-color: transparent;
+}
+
+#top-bar
+{
+    top: 0;
+    position: fixed;
+}
+
+.menu-bar
+{
+    z-index: 30;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    height: 1.25em;
+    width: 100%;
+    left: 0;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    background-color: #171719;
+    -webkit-transition: top 300ms, background-color 300ms;
+    transition: top 300ms, background-color 300ms;
+}
+
+.current
+{
+    color: #ff7223;
+}
+
+.bar-item
+{
+    text-decoration: none;
+    display: block;
+    flex: 1;
+    height: 100%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #33a8c1;
+    -webkit-transition: height 100ms, color 100ms, background-color 100ms;
+    transition: height 100ms, color 100ms, background-color 100ms;
+}
+
+.bar-subitem
+{
+    width: inherit;
+    background-color: #171719;
+    color: #33a8c1;
+    -webkit-transition: color 100ms, background-color 100ms;
+    transition: color 100ms, background-color 100ms;
+}
+
+.submenu-dropdown
+{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: relative;
+    padding: 0;
+    z-index: 1;
+}
+
+.submenu:hover .submenu-dropdown
+{
+    display: block;
+    background-color: #171719;
+    color: #ff7223;
+    -webkit-transition: height 100ms, color 100ms, background-color 100ms;
+    transition: height 100ms, color 100ms, background-color 100ms;
+}
+
+
+.bar-item:hover, .bar-subitem:hover, .bar-item:active, .bar-subitem:active
+{
+    color: #002729;
+    background-color: #ff7223;
+    -webkit-transition: color 100ms, background-color 100ms;
+    transition: color 100ms, background-color 100ms;
+}
+
+#hero-img {
+    width: 560px;
+    /*opacity: 0.9;*/
+}
+
+.ctas
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    width: 560px;
+    cursor: pointer;
+}
+
+.cta-button
+{
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: #272729;
+    color: #33a8c1;
+    font-size: 1.9em;
+}
+
+#watch-button:hover
+{
+    color: #272729;
+    background-color: #33a8c1;
+    -webkit-transition: color 100ms, background-color 100ms;
+    transition: color 100ms, background-color 100ms;
+}
+
+#watch-button a
+{
+    text-decoration: none;
+    display: block;
+}
+
+.listen-button
+{
+    background-color: #ff7223;
+    color: #272729;
+}
+
+.listen-button:hover
+{
+    color: #ff7223;
+    background-color: #272729;
+    -webkit-transition: color 100ms, background-color 100ms;
+    transition: color 100ms, background-color 100ms;
+}
+
+
+.listen-button:hover /*.listen-dropdown*/
+{
+    display: block;  
+}
+
+.listen-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    padding: 0;
+    z-index: 1;
+}
+
+#tmp-fomo
+{
+    display: none;
+    padding: 5px;
+    color: #DDD;
+    background-color: #1388a1;
+    font-size: 0.8em;
+}
+
+#fomo-tmp-title
+{
+    color: #ff7223;
+    font-weight: bold;
+}
+
+.service-logo
+{
+    width: 220px;
+}
+
+.play-service
+{
+    display: block;
+    width: 560px;
+    background-color: #1388a1;
+    padding: 0;
+    margin: 0;
+}
+
+#close-dropdown
+{
+    color: #171719;
+    font-size: 1.5em;
+}
+
+.play-service:hover
+{
+    background-color: #ff7223;
+}
+
+#container
+{
+    top:0;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    font-size: 1em;
+    text-align: center;
+    overflow: visible;
+    /*white-space:nowrap;*/
+}
+
+
+
+h2.ep-title
+{
+    font-size: 3.6em;
+    font-weight: normal;
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+.footer
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+}
+
+.spacebarman-description
+{
+    display: block;
+    color: rgba(255,255,255,0.05);/*#474749;*/
+    padding: 1em;
+}
+
+/*@media screen and (max-width:830px), screen and (max-height:450px)*/
+@media only screen and (max-device-width: 480px)
+{
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+{
+
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    html
+    {
+        font-size: 0.7em;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 560px) {
+    #container, #hero-img, #listen-button {
+        width: 100%;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-height : 320px) {
+
+}
+
