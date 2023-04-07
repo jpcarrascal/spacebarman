@@ -14,4 +14,3 @@ jobs:
         server: violenceincinema.com/public_html/spacebarman.com/sites/2023
         username: ${{ secrets.SPCBRMN_FTP_USERNAME }}
         password: ${{ secrets.SPCBRMN_FTP_PASSWD }}
-        ARGS: --delete
