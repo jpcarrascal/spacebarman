@@ -11,6 +11,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.samkirkland.com
+        server: violenceincinema.com/public_html/spacebarman.com/sites/2023
         username: ${{ secrets.SPCBRMN_FTP_USERNAME }}
         password: ${{ secrets.SPCBRMN_FTP_PASSWD }}
