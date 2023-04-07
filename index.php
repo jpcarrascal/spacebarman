@@ -13,7 +13,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width,user-scalable =no" />
-    <meta name="description" content="Spacebarman is an electronic rock band from Barcelona. Spacebarman es un grupo de rock de Barcelona.">
+    <meta name="description" content="Spacebarman is an electronic rock band from Barcelona. Spacebarman es un grupo de rock electrónico de Barcelona.">
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <title>Spacebarman: an electronic rock band from Barcelona</title>
@@ -57,8 +57,10 @@
 
         
     <div id="container">
+        <!--
         <div>
                 <?php
+                /*
                 $default = '<img id="hero-img" src="images/FOMO-cover.png" />';
                 $default = '<iframe width="560" height="315" src="https://www.youtube.com/embed/7elgfIqfh_I?modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                 $json = "event/event.json";
@@ -73,75 +75,66 @@
                     }
                 }
                 echo $default;
+                */
                 ?>
-                <!--
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eqP2j7pND_w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                -->
         </div>
+        -->
 
         <div class="ctas">
 
-                    
+            <!---
             <div class="cta-button" id="watch-button">
                 <a href="https://lockdown-vr.glitch.me/" target="_brank">VR Video</a>
             </div>
 
             <div class="listen-button cta-button" id="listen-button">
-                <div class="listen-dropdown" id="listen-dropdown" <?php if($_GET["from"] == "fomolisten") echo 'style="display:block;"'; ?> >
-                        <div id="tmp-fomo" <?php if($_GET["from"] == "fomolisten") echo 'style="display:block;"'; ?> >
-                        Listen to our new EP <span id="fomo-tmp-title">FOMO</span> on:
-                        </div>
-                        <a class="play-service-link" href="https://open.spotify.com/album/510008FidKc33DxZUpp7Qq?si=JxDdR_BXQBipzTMOnFZesw" target="_blank">
-                            <div class="play-service" service-link="spotify">
-                                <img class="service-logo" src="images/logo-spotify.png" service-link="spotify" />
-                            </div>
-                        </a>
-
-                        <a class="play-service-link" href="https://spacebarman.bandcamp.com/album/fomo" target="_blank">
-                            <div class="play-service" service-link="bandcamp">
-                                <img class="service-logo" src="images/logo-bandcamp.png" service-link="bandcamp" />
-                            </div>
-                        </a>
-
-                        <a class="play-service-link" href="https://music.apple.com/us/album/fomo-ep/1532885843" target="_blank">
-                            <div class="play-service" service-link="apple">
-                                <img class="service-logo" src="images/logo-applemusic.png" service-link="apple" />
-                            </div>
-                        </a>
-
-                        <a class="play-service-link" href="https://music.youtube.com/playlist?list=OLAK5uy_nl0bzHTrVJopcPY6nCKzZCGYCLNwpQKfM" target="_blank">
-                            <div class="play-service" service-link="youtube">
-                                <img class="service-logo" src="images/logo-youtubemusic.png" service-link="youtube" />
-                            </div>
-                        </a>
-
-                        <a class="play-service-link" href="https://www.deezer.com/us/album/174968362" target="_blank">
-                            <div class="play-service" service-link="deezer">
-                                <img class="service-logo" src="images/logo-deezer.png" service-link="deezer" />
-                            </div>
-                        </a>
-
-                        <a class="play-service-link" href="https://music.amazon.com/albums/B08JQJL44F" target="_blank">
-                            <div class="play-service" service-link="amazon">
-                                <img class="service-logo" src="images/logo-amazon.png" service-link="amazon" />
-                            </div>
-                        </a>
-
-                        <a class="play-service-link" href="https://soundcloud.com/spacebarman/sets/fomo" target="_blank">
-                            <div class="play-service" service-link="soundcloud">
-                                <img class="service-logo" src="images/logo-soundcloud.png" service-link="soundcloud" />
-                            </div>
-                        </a>
-
-                        <div class="play-service" id="close-dropdown">
-                            &times;
-                        </div>
-                </div>
-
                 Music
-                
             </div>
-            
+            --->
+                <div id="release-links">
+                    New single <span id="release-title">No Place For Us</span> Listen on:
+                </div>
+                <a class="play-service-link" href="https://open.spotify.com/album/510008FidKc33DxZUpp7Qq?si=JxDdR_BXQBipzTMOnFZesw" target="_blank">
+                    <div class="play-service" service-link="spotify">
+                        <img class="service-logo" src="images/logo-spotify.png" service-link="spotify" />
+                    </div>
+                </a>
+
+                <a class="play-service-link" href="https://spacebarman.bandcamp.com/album/fomo" target="_blank">
+                    <div class="play-service" service-link="bandcamp">
+                        <img class="service-logo" src="images/logo-bandcamp.png" service-link="bandcamp" />
+                    </div>
+                </a>
+
+                <a class="play-service-link" href="https://music.apple.com/us/album/fomo-ep/1532885843" target="_blank">
+                    <div class="play-service" service-link="apple">
+                        <img class="service-logo" src="images/logo-applemusic.png" service-link="apple" />
+                    </div>
+                </a>
+
+                <a class="play-service-link" href="https://music.youtube.com/playlist?list=OLAK5uy_nl0bzHTrVJopcPY6nCKzZCGYCLNwpQKfM" target="_blank">
+                    <div class="play-service" service-link="youtube">
+                        <img class="service-logo" src="images/logo-youtubemusic.png" service-link="youtube" />
+                    </div>
+                </a>
+
+                <a class="play-service-link" href="https://www.deezer.com/us/album/174968362" target="_blank">
+                    <div class="play-service" service-link="deezer">
+                        <img class="service-logo" src="images/logo-deezer.png" service-link="deezer" />
+                    </div>
+                </a>
+
+                <a class="play-service-link" href="https://music.amazon.com/albums/B08JQJL44F" target="_blank">
+                    <div class="play-service" service-link="amazon">
+                        <img class="service-logo" src="images/logo-amazon.png" service-link="amazon" />
+                    </div>
+                </a>
+
+                <a class="play-service-link" href="https://soundcloud.com/spacebarman/sets/fomo" target="_blank">
+                    <div class="play-service" service-link="soundcloud">
+                        <img class="service-logo" src="images/logo-soundcloud.png" service-link="soundcloud" />
+                    </div>
+                </a>
         </div>
     </div>
 
@@ -150,11 +143,13 @@
     <div class="footer">
         <span class="spacebarman-description">
         <h1>Spacebarman</h1>
-        Spacebarman is an electronic rock band from Barcelona.<br/>Spacebarman es un grupo de rock de Barcelona.
+        Spacebarman is an electronic rock band from Barcelona.<br/>Spacebarman es un grupo de rock electrónico de Barcelona.
         </span>
     </div>
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script><script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#1a6a89","text":"#ffffff","border":"#fde296"},"button":{"background":"#4ccae5","text":"#1a1a1a"}},"position":"bottom","padding":"small","content":{"href":"https://www.websitepolicies.com/policies/view/pv0EWq3z","message":"Spacebarman.com uses cookies to ensure you get the best experience on our website"}})});</script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcc.init(
+        {"colors":cookiesPopupColors,
+        "position":"bottom","padding":"small","content":{"href":"https://www.websitepolicies.com/policies/view/pv0EWq3z","message":"Spacebarman.com uses cookies to ensure you get the best experience on our website"}})});</script>
 
 </body>
 </html>

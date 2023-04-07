@@ -3,18 +3,30 @@ Dark background: #171719;
 Blue background: #1a6a89;
 Light blue: #33a8c1;
 Orange: #ff7223;
+
+Dark: var(--dark)
+Mid: var(--mid)
+Light: var(--light)
+Red: var(--accent)
 */
+
+:root {
+    --dark: rgb(25, 23, 23);
+    --mid: rgb(110, 100, 90);
+    --light: rgb(210, 200, 190);
+    --accent: rgb(100, 80, 70);
+}
 
 * { margin: 0; padding: 0; border: 0; }
 
 a
 {
-    color: #33a8c1;
+    color: var(--light);
 }
 
 a:hover
 {
-    color: #FFF;
+    color: var(--light);
 }
 
 p, h2
@@ -31,8 +43,8 @@ html
     height: 100%;
     font-family: century-gothic, sans-serif;
     font-size: 1em;
-    background-color: #1a6a89;
-    background: url("images/Spacebarman-mad_sci-hero.jpg") no-repeat center center fixed;
+    background-color: var(--mid);
+    background: url("images/web-bg-2023.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -50,7 +62,7 @@ body
     width: 100%;
     height: 100%;
     overflow: hidden;
-    color: #CCC;
+    color: var(--light);
     background-color: transparent;
 }
 
@@ -71,14 +83,14 @@ body
     left: 0;
     font-size: 1.5em;
     line-height: 1.25em;
-    background-color: #171719;
+    background-color: var(--dark);
     -webkit-transition: top 300ms, background-color 300ms;
     transition: top 300ms, background-color 300ms;
 }
 
 .current
 {
-    color: #ff7223;
+    color: var(--accent);
 }
 
 .bar-item
@@ -89,7 +101,7 @@ body
     height: 100%;
     text-align: center;
     letter-spacing: 0.05em;
-    color: #33a8c1;
+    color: var(--light);
     -webkit-transition: height 100ms, color 100ms, background-color 100ms;
     transition: height 100ms, color 100ms, background-color 100ms;
 }
@@ -97,8 +109,8 @@ body
 .bar-subitem
 {
     width: inherit;
-    background-color: #171719;
-    color: #33a8c1;
+    background-color: var(--dark);
+    color: var(--light);
     -webkit-transition: color 100ms, background-color 100ms;
     transition: color 100ms, background-color 100ms;
 }
@@ -118,8 +130,8 @@ body
 .submenu:hover .submenu-dropdown
 {
     display: block;
-    background-color: #171719;
-    color: #ff7223;
+    background-color: var(--dark);
+    color: var(--light);
     -webkit-transition: height 100ms, color 100ms, background-color 100ms;
     transition: height 100ms, color 100ms, background-color 100ms;
 }
@@ -127,8 +139,8 @@ body
 
 .bar-item:hover, .bar-subitem:hover, .bar-item:active, .bar-subitem:active
 {
-    color: #002729;
-    background-color: #ff7223;
+    color: var(--light);
+    background-color: var(--mid);
     -webkit-transition: color 100ms, background-color 100ms;
     transition: color 100ms, background-color 100ms;
 }
@@ -138,30 +150,41 @@ body
     /*opacity: 0.9;*/
 }
 
+#container
+{
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    overflow: visible;
+    /*white-space:nowrap;*/
+}
+
 .ctas
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 0.5em;
-    width: 560px;
-    cursor: pointer;
 }
 
 .cta-button
 {
     flex-grow: 1;
     flex-basis: 0;
-    background-color: #272729;
-    color: #33a8c1;
+    background-color: var(--dark);
+    color: var(--light);
     font-size: 1.9em;
 }
 
 #watch-button:hover
 {
-    color: #272729;
-    background-color: #33a8c1;
+    color: var(--dark);
+    background-color: var(--accent);
     -webkit-transition: color 100ms, background-color 100ms;
     transition: color 100ms, background-color 100ms;
 }
@@ -174,14 +197,14 @@ body
 
 .listen-button
 {
-    background-color: #ff7223;
-    color: #272729;
+    background-color: var(--accent);
+    color: var(--light);
 }
 
 .listen-button:hover
 {
-    color: #ff7223;
-    background-color: #272729;
+    color: var(--light);
+    background-color: var(--dark);
     -webkit-transition: color 100ms, background-color 100ms;
     transition: color 100ms, background-color 100ms;
 }
@@ -193,74 +216,60 @@ body
 }
 
 .listen-dropdown {
+    font-size: 1.5em;
     position: absolute;
-    top: 50px;
-    right: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none;
     position: absolute;
     padding: 0;
     z-index: 1;
 }
 
-#tmp-fomo
+#release-links
 {
-    display: none;
     padding: 5px;
-    color: #DDD;
-    background-color: #1388a1;
-    font-size: 0.8em;
+    color: var(--light);
+    font-weight: 100;
 }
 
-#fomo-tmp-title
+#release-title
 {
-    color: #ff7223;
     font-weight: bold;
+    color: var(--dark);
+    background-color: var(--light);
+    padding-left: .2em;
+    padding-right: .2em;
 }
 
 .service-logo
 {
-    width: 220px;
+    width: 15em;
 }
 
 .play-service
 {
+    cursor: pointer;
     display: block;
-    width: 560px;
-    background-color: #1388a1;
+    width: 480px;
+    background-color: var(--light);
+    color: var(--dark);
     padding: 0;
     margin: 0;
+    margin: .15em;
+    border-radius: .1em;
 }
 
 #close-dropdown
 {
-    color: #171719;
+    color: var(--dark);
     font-size: 1.5em;
 }
 
 .play-service:hover
 {
-    background-color: #ff7223;
+    background-color: var(--mid);
 }
-
-#container
-{
-    top:0;
-    z-index: 12;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    font-size: 1em;
-    text-align: center;
-    overflow: visible;
-    /*white-space:nowrap;*/
-}
-
 
 
 h2.ep-title
@@ -283,7 +292,7 @@ h2.ep-title
 .spacebarman-description
 {
     display: block;
-    color: rgba(255,255,255,0.05);/*#474749;*/
+    color: rgba(255,255,255,0.05);
     padding: 1em;
 }
 

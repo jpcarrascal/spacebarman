@@ -1,7 +1,7 @@
 window.onload = function() {
     var listenButton = document.querySelector('#listen-button');
     var listenDropdown = document.querySelector('#listen-dropdown');
-    var tmpFomo = document.querySelector('#tmp-fomo');
+    var tmpFomo = document.querySelector('#release-links');
 
     //if(findGetParameter("from").localeCompare("mailchimpfomo") == 0)
     //    listenDropdown.style.display = "block";
@@ -52,3 +52,4 @@ window.onload = function() {
     */
 
 };
+
