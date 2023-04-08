@@ -61,7 +61,7 @@ body
 {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -173,7 +173,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .links-text
@@ -234,6 +234,7 @@ body
     width: 8em;
     border-radius: 5em;
     border: .2em solid var(--light);
+    margin-top: 5vh;
 }
 
 #close-dropdown

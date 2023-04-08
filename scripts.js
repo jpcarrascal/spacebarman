@@ -9,7 +9,7 @@ const links = [
     {"include":true, name:"bio", text:"Bio", link:"bio/", icon:""},
     {"include":true, name:"facebook", text:"Facebook", link:"https://www.facebook.com/spacebarman", icon:""},
     {"include":true, name:"instagram", text:"Instagram", link:"https://www.instagram.com/spacebarman", icon:""},
-    {"include":true, name:"subscribe", text:"Subscribe to our mailing list", link:"https://spacebarman.us12.list-manage.com/subscribe?u=08fa2b83e7de09bfd19384dee&id=08f0d07b1e", icon:""}
+    {"include":true, name:"subscribe", text:"Subscribe to our mailing list", link:"https://spacebarman.us21.list-manage.com/subscribe?u=eebe2ae40abe6e1bfafe680d8&id=8652641ff4", icon:""}
 ];
 
 window.onload = function() {
@@ -44,6 +44,7 @@ function addLink(link) {
         var linkDiv = document.createElement('div');
         linkDiv.setAttribute('class', 'link-item');
         var linkElement = document.createElement('a');
+        linkElement.setAttribute("service-link", link.name)
         linkElement.setAttribute('href', link.link);
         linkElement.setAttribute('target', '_blank');
         linkElement.setAttribute('class', 'link-item-link');
