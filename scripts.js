@@ -1,3 +1,17 @@
+const links = [
+    {"include":true,  name:"spotify",    text:"", link:"https://open.spotify.com/artist/1o8zzq05yXKrsdQUrMzZdc", icon:"logo-spotify.png"},
+    {"include":true,  name:"bandcamp",   text:"", link:"https://spacebarman.bandcamp.com/album/no-place-for-us", icon:"logo-bandcamp.png"},
+    {"include":true,  name:"soundcloud", text:"", link:"https://soundcloud.com/spacebarman/sets/no-place-for-us-single", icon:"logo-soundcloud.png"},
+    {"include":true,  name:"youtube",    text:"", link:"https://youtube.com/spacebarmanvideo", icon:"logo-youtube.png"},
+    {"include":false, name:"deezer", text:"", link:"https://www.deezer.com/en/artist/4246882", icon:"logo-deezer.png"},
+    {"include":false, name:"amazon", text:"", link:"https://music.amazon.com/artists/B009VU5FNW/spacebarman", icon:"logo-amazon.png"},
+    {"include":false, name:"applumusic", text:"", link:"https://music.apple.com/us/artist/spacebarman/525428256", icon:"logo-applemusic.png"},
+    {"include":true, name:"bio", text:"Bio", link:"bio/", icon:""},
+    {"include":true, name:"facebook", text:"Facebook", link:"https://www.facebook.com/spacebarman", icon:""},
+    {"include":true, name:"instagram", text:"Instagram", link:"https://www.instagram.com/spacebarman", icon:""},
+    {"include":true, name:"subscribe", text:"Subscribe to our mailing list", link:"https://spacebarman.us12.list-manage.com/subscribe?u=08fa2b83e7de09bfd19384dee&id=08f0d07b1e", icon:""}
+];
+
 window.onload = function() {
     var listenButton = document.querySelector('#listen-button');
     var listenDropdown = document.querySelector('#listen-dropdown');
@@ -6,36 +20,8 @@ window.onload = function() {
     //if(findGetParameter("from").localeCompare("mailchimpfomo") == 0)
     //    listenDropdown.style.display = "block";
 
-    listenButton.onclick = function(event){
-        event.stopPropagation();
-        const clickedItem = event.target;
-        if(clickedItem.hasAttribute("service-link"))
-        {
-            const clickedService = clickedItem.getAttribute("service-link");
-            gtag('event', clickedService, {
-                'event_category': 'music-service-link-click',
-                'event_label': 'FOMO-launch',
-                'value': 0
-              });
-            console.log(clickedService + " clicked.")
-        }
-        if(listenDropdown.style.display == "block") {
-            listenDropdown.style.display = "none";
-            tmpFomo.style.display = "none";
-        }
-        else
-            listenDropdown.style.display = "block";
-    }
-
-    window.onkeyup = function(event){
-        if(event.key == "Escape") {
-            listenDropdown.style.display = "none";
-            tmpFomo.style.display = "none";
-        }
-    }
-    document.querySelector("body").onclick = function(event){
-        listenDropdown.style.display = "none";
-        tmpFomo.style.display = "none";
+    for(var i=0; i<links.length; i++) {
+        addLink(links[i]);
     }
 
     /*
@@ -50,6 +36,24 @@ window.onload = function() {
         return result;
     }
     */
-
 };
 
+function addLink(link) {
+    if(link.include) {
+        var listenDropdown = document.querySelector('#links-container');
+        var linkDiv = document.createElement('div');
+        linkDiv.setAttribute('class', 'link-item');
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', link.link);
+        linkElement.setAttribute('target', '_blank');
+        linkElement.setAttribute('class', 'link-item-link');
+        if(link.icon != "") {
+            linkElement.innerHTML = '<img src="images/' + link.icon + '" alt="' + link.name + ' logo" class="service-logo">';
+        } else {
+            linkElement.innerHTML = link.text;
+        }
+        linkDiv.appendChild(linkElement);
+        listenDropdown.appendChild(linkDiv);
+        console.log("adding " + link.name);
+    }
+}

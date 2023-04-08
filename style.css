@@ -21,12 +21,18 @@ Red: var(--accent)
 
 a
 {
-    color: var(--light);
+    /*color: var(--light); */
+    text-decoration: none;
 }
 
 a:hover
 {
     color: var(--light);
+}
+
+a:visited, a.link-item-link
+{
+    color: var(--dark);
 }
 
 p, h2
@@ -93,7 +99,7 @@ body
     color: var(--accent);
 }
 
-.bar-item
+.bar-item, a.bar-item
 {
     text-decoration: none;
     display: block;
@@ -152,7 +158,6 @@ body
 
 #container
 {
-    z-index: 12;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,80 +167,16 @@ body
     /*white-space:nowrap;*/
 }
 
-.links-container
+#links-container
 {
+    z-Index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-#band-photo {
-    background: url("images/Spacebarman-band-02-small.jpg");
-    background-size:     cover;
-    background-repeat:   no-repeat;
-    background-position: center center;
-    height: 10em;
-    width: 10em;
-    border-radius: 5em;
-    margin-bottom: 1.5em;
-}
-
-.cta-button
-{
-    flex-grow: 1;
-    flex-basis: 0;
-    background-color: var(--dark);
-    color: var(--light);
-    font-size: 1.9em;
-}
-
-#watch-button:hover
-{
-    color: var(--dark);
-    background-color: var(--accent);
-    -webkit-transition: color 100ms, background-color 100ms;
-    transition: color 100ms, background-color 100ms;
-}
-
-#watch-button a
-{
-    text-decoration: none;
-    display: block;
-}
-
-.listen-button
-{
-    background-color: var(--accent);
-    color: var(--light);
-}
-
-.listen-button:hover
-{
-    color: var(--light);
-    background-color: var(--dark);
-    -webkit-transition: color 100ms, background-color 100ms;
-    transition: color 100ms, background-color 100ms;
-}
-
-
-.listen-button:hover /*.listen-dropdown*/
-{
-    display: block;  
-}
-
-.listen-dropdown {
-    font-size: 1.5em;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    padding: 0;
-    z-index: 1;
-}
-
-#links-text
+.links-text
 {
     padding: 5px;
     color: var(--light);
@@ -254,14 +195,22 @@ body
 
 .service-logo
 {
-    width: 15em;
+    height: 5vh;
+    display: block;
 }
 
-.play-service
+.link-item, #hero-text
 {
     cursor: pointer;
     display: block;
     width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 1.5em;
+    font-weight: bold;
     background-color: var(--light);
     color: var(--dark);
     padding: 0;
@@ -270,13 +219,30 @@ body
     border-radius: .1em;
 }
 
+#hero-text {
+    background-color: transparent;
+    color: var(--light);
+}
+
+#band-photo {
+    background: url("images/Spacebarman-duotone.jpg");
+    filter: hue-rotate(-30deg);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 8em;
+    width: 8em;
+    border-radius: 5em;
+    border: .2em solid var(--light);
+}
+
 #close-dropdown
 {
     color: var(--dark);
     font-size: 1.5em;
 }
 
-.play-service:hover
+.link-item:hover
 {
     background-color: var(--mid);
 }
@@ -289,7 +255,7 @@ h2.ep-title
     text-shadow: 2px 2px var(--dark);
 }
 
-.footer
+.footer, .footer-landing
 {
     text-align: center;
     display: flex;
@@ -297,6 +263,11 @@ h2.ep-title
     justify-content: space-evenly;
     width: 100%;
     margin: 0;
+}
+
+#footer-landing {
+    position: fixed;
+    z-Index: 0;
 }
 
 .spacebarman-description

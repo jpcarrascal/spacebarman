@@ -36,7 +36,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NG7C29V"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
+<!--
     <nav id="top-bar" class="menu-bar">
         <a class="bar-item" href="bio/">Bio</a>
         <a class="bar-item" href="https://www.youtube.com/user/spacebarmanvideo" target="_blank">Video</a>
@@ -51,103 +51,54 @@
             </div>
         </div>
     </nav>
-
+-->
 
 
 
         
-    <div id="container">
-        <!--
-        <div>
-                <?php
-                /*
-                $default = '<img id="hero-img" src="images/FOMO-cover.png" />';
-                $default = '<iframe width="560" height="315" src="https://www.youtube.com/embed/7elgfIqfh_I?modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-                $json = "event/event.json";
-                if ( file_exists($json) ) {
-                    $data = json_decode(file_get_contents($json));
-                    $expiration = strtotime($data->date) + 24*60*60;
-                    if ($expiration > strtotime("now") && file_exists("event/".$data->img) ) {
-                        $default = '<div class="event-frame">';
-                        $default .= '<a href="'.$data->link.'" target="_blank" alt="'.$data->text.'">';
-                        $default .= '<img id="hero-img" src="event/'.$data->img.'" />';
-                        $default .= '</a></div>';
-                    }
+    <!--
+    <div>
+            <?php
+            /*
+            $default = '<img id="hero-img" src="images/FOMO-cover.png" />';
+            $default = '<iframe width="560" height="315" src="https://www.youtube.com/embed/7elgfIqfh_I?modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            $json = "event/event.json";
+            if ( file_exists($json) ) {
+                $data = json_decode(file_get_contents($json));
+                $expiration = strtotime($data->date) + 24*60*60;
+                if ($expiration > strtotime("now") && file_exists("event/".$data->img) ) {
+                    $default = '<div class="event-frame">';
+                    $default .= '<a href="'.$data->link.'" target="_blank" alt="'.$data->text.'">';
+                    $default .= '<img id="hero-img" src="event/'.$data->img.'" />';
+                    $default .= '</a></div>';
                 }
-                echo $default;
-                */
-                ?>
+            }
+            echo $default;
+            */
+            ?>
+    </div>
+    -->
+
+    <div class="links-container" id="links-container">
+
+        <div id="band-photo">
         </div>
-        -->
 
-        <div class="links-container">
-
-            <!---
-            <div class="cta-button" id="watch-button">
-                <a href="https://lockdown-vr.glitch.me/" target="_brank">VR Video</a>
-            </div>
-
-            <div class="listen-button cta-button" id="listen-button">
-                Music
-            </div>
-            --->
-
-            <div id="band-photo">
-            </div>
-
-            <div id="links-text">
-                New single <span id="release-title">No Place For Us</span> Listen on:
-            </div>
-            <a class="play-service-link" href="https://open.spotify.com/artist/1o8zzq05yXKrsdQUrMzZdc" target="_blank">
-                <div class="play-service" service-link="spotify">
-                    <img class="service-logo" src="images/logo-spotify.png" service-link="spotify" />
-                </div>
-            </a>
-
-            <a class="play-service-link" href="https://spacebarman.bandcamp.com/album/no-place-for-us" target="_blank">
-                <div class="play-service" service-link="bandcamp">
-                    <img class="service-logo" src="images/logo-bandcamp.png" service-link="bandcamp" />
-                </div>
-            </a>
-            <a class="play-service-link" href="https://music.apple.com/us/artist/spacebarman/525428256" target="_blank">
-                <div class="play-service" service-link="apple">
-                    <img class="service-logo" src="images/logo-applemusic.png" service-link="apple" />
-                </div>
-            </a>
-
-            <!--
-
-            <a class="play-service-link" href="https://www.deezer.com/en/artist/4246882" target="_blank">
-                <div class="play-service" service-link="deezer">
-                    <img class="service-logo" src="images/logo-deezer.png" service-link="deezer" />
-                </div>
-            </a>
-            
-
-            <a class="play-service-link" href="https://music.amazon.com/artists/B009VU5FNW/spacebarman" target="_blank">
-                <div class="play-service" service-link="amazon">
-                    <img class="service-logo" src="images/logo-amazon.png" service-link="amazon" />
-                </div>
-            </a>
-            --->
-            <a class="play-service-link" href="https://soundcloud.com/spacebarman/sets/no-place-for-us-single?si=080d6499c35b4dc8a83971e2dd66a64e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
-                <div class="play-service" service-link="soundcloud">
-                    <img class="service-logo" src="images/logo-soundcloud.png" service-link="soundcloud" />
-                </div>
-            </a>
-
-            <a class="play-service-link" href="https://youtube.com/spacebarmanvideo" target="_blank">
-                <div class="play-service" service-link="youtube">
-                    <img class="service-logo" src="images/logo-youtube.png" service-link="youtube" />
-                </div>
-            </a>
-
+        <div class="links-text">
+            <span id="hero-text">
+            SPACEBARMAN
+            </span>
         </div>
+
+        <div class="links-text">
+            New single <span id="release-title">No Place For Us</span> Listen on:
+        </div>
+
     </div>
 
 
 
-    <div class="footer">
+    <div class="footer" id="footer-landing">
         <span class="spacebarman-description">
         <h1>Spacebarman</h1>
         Spacebarman is an electronic rock band from Barcelona.<br/>Spacebarman es un grupo de rock electrónico de Barcelona.
