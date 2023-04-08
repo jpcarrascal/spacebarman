@@ -187,7 +187,6 @@ body
 
 #release-title
 {
-    font-weight: bold;
     color: var(--dark);
     background-color: var(--light);
     padding-left: .2em;

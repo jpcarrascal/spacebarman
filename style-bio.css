@@ -153,13 +153,7 @@ a:hover
     text-decoration: underline;
 }
 
-.footer a
-{
-    text-decoration: none;
-}
-
 a, a:visited {
-    font-weight: 800;
     color: var(--light);
     text-decoration: underline;
 }
