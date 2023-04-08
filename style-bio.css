@@ -147,7 +147,7 @@ h3
     margin-top: 0.5em;
 }
 
-.footer a:hover
+a:hover
 {
     color: var(--accent);
     text-decoration: underline;
@@ -158,6 +158,11 @@ h3
     text-decoration: none;
 }
 
+a, a:visited {
+    font-weight: 800;
+    color: var(--light);
+    text-decoration: underline;
+}
 
 @media only screen and (min-width : 1024px) {
     .two-column

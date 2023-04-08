@@ -13,8 +13,8 @@ Red: var(--accent)
 :root {
     --dark: rgb(25, 23, 23);
     --mid: rgb(110, 100, 90);
-    --light: rgb(210, 200, 190);
-    --accent: rgb(100, 80, 70);
+    --light: rgba(210, 200, 190, 0.9);
+    --accent: rgb(194, 42, 19);
 }
 
 * { margin: 0; padding: 0; border: 0; }
@@ -96,7 +96,7 @@ body
 
 .current
 {
-    color: var(--accent);
+    color: var(--mid);
 }
 
 .bar-item, a.bar-item
@@ -182,6 +182,7 @@ body
     color: var(--light);
     font-weight: 100;
     font-size: 1.5em;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 #release-title
@@ -191,6 +192,7 @@ body
     background-color: var(--light);
     padding-left: .2em;
     padding-right: .2em;
+    text-shadow: none;
 }
 
 .service-logo
