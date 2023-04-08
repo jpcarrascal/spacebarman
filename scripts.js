@@ -1,7 +1,7 @@
 window.onload = function() {
     var listenButton = document.querySelector('#listen-button');
     var listenDropdown = document.querySelector('#listen-dropdown');
-    var tmpFomo = document.querySelector('#release-links');
+    var tmpFomo = document.querySelector('#links-text');
 
     //if(findGetParameter("from").localeCompare("mailchimpfomo") == 0)
     //    listenDropdown.style.display = "block";

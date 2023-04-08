@@ -80,7 +80,7 @@
         </div>
         -->
 
-        <div class="ctas">
+        <div class="links-container">
 
             <!---
             <div class="cta-button" id="watch-button">
@@ -91,50 +91,57 @@
                 Music
             </div>
             --->
-                <div id="release-links">
-                    New single <span id="release-title">No Place For Us</span> Listen on:
+
+            <div id="band-photo">
+            </div>
+
+            <div id="links-text">
+                New single <span id="release-title">No Place For Us</span> Listen on:
+            </div>
+            <a class="play-service-link" href="https://open.spotify.com/artist/1o8zzq05yXKrsdQUrMzZdc" target="_blank">
+                <div class="play-service" service-link="spotify">
+                    <img class="service-logo" src="images/logo-spotify.png" service-link="spotify" />
                 </div>
-                <a class="play-service-link" href="https://open.spotify.com/album/510008FidKc33DxZUpp7Qq?si=JxDdR_BXQBipzTMOnFZesw" target="_blank">
-                    <div class="play-service" service-link="spotify">
-                        <img class="service-logo" src="images/logo-spotify.png" service-link="spotify" />
-                    </div>
-                </a>
+            </a>
 
-                <a class="play-service-link" href="https://spacebarman.bandcamp.com/album/fomo" target="_blank">
-                    <div class="play-service" service-link="bandcamp">
-                        <img class="service-logo" src="images/logo-bandcamp.png" service-link="bandcamp" />
-                    </div>
-                </a>
+            <a class="play-service-link" href="https://spacebarman.bandcamp.com/album/no-place-for-us" target="_blank">
+                <div class="play-service" service-link="bandcamp">
+                    <img class="service-logo" src="images/logo-bandcamp.png" service-link="bandcamp" />
+                </div>
+            </a>
+            <a class="play-service-link" href="https://music.apple.com/us/artist/spacebarman/525428256" target="_blank">
+                <div class="play-service" service-link="apple">
+                    <img class="service-logo" src="images/logo-applemusic.png" service-link="apple" />
+                </div>
+            </a>
 
-                <a class="play-service-link" href="https://music.apple.com/us/album/fomo-ep/1532885843" target="_blank">
-                    <div class="play-service" service-link="apple">
-                        <img class="service-logo" src="images/logo-applemusic.png" service-link="apple" />
-                    </div>
-                </a>
+            <!--
 
-                <a class="play-service-link" href="https://music.youtube.com/playlist?list=OLAK5uy_nl0bzHTrVJopcPY6nCKzZCGYCLNwpQKfM" target="_blank">
-                    <div class="play-service" service-link="youtube">
-                        <img class="service-logo" src="images/logo-youtubemusic.png" service-link="youtube" />
-                    </div>
-                </a>
+            <a class="play-service-link" href="https://www.deezer.com/en/artist/4246882" target="_blank">
+                <div class="play-service" service-link="deezer">
+                    <img class="service-logo" src="images/logo-deezer.png" service-link="deezer" />
+                </div>
+            </a>
+            
 
-                <a class="play-service-link" href="https://www.deezer.com/us/album/174968362" target="_blank">
-                    <div class="play-service" service-link="deezer">
-                        <img class="service-logo" src="images/logo-deezer.png" service-link="deezer" />
-                    </div>
-                </a>
+            <a class="play-service-link" href="https://music.amazon.com/artists/B009VU5FNW/spacebarman" target="_blank">
+                <div class="play-service" service-link="amazon">
+                    <img class="service-logo" src="images/logo-amazon.png" service-link="amazon" />
+                </div>
+            </a>
+            --->
+            <a class="play-service-link" href="https://soundcloud.com/spacebarman/sets/no-place-for-us-single?si=080d6499c35b4dc8a83971e2dd66a64e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                <div class="play-service" service-link="soundcloud">
+                    <img class="service-logo" src="images/logo-soundcloud.png" service-link="soundcloud" />
+                </div>
+            </a>
 
-                <a class="play-service-link" href="https://music.amazon.com/albums/B08JQJL44F" target="_blank">
-                    <div class="play-service" service-link="amazon">
-                        <img class="service-logo" src="images/logo-amazon.png" service-link="amazon" />
-                    </div>
-                </a>
+            <a class="play-service-link" href="https://youtube.com/spacebarmanvideo" target="_blank">
+                <div class="play-service" service-link="youtube">
+                    <img class="service-logo" src="images/logo-youtube.png" service-link="youtube" />
+                </div>
+            </a>
 
-                <a class="play-service-link" href="https://soundcloud.com/spacebarman/sets/fomo" target="_blank">
-                    <div class="play-service" service-link="soundcloud">
-                        <img class="service-logo" src="images/logo-soundcloud.png" service-link="soundcloud" />
-                    </div>
-                </a>
         </div>
     </div>
 

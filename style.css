@@ -157,19 +157,28 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    height: 100%;
     text-align: center;
     overflow: visible;
     /*white-space:nowrap;*/
 }
 
-.ctas
+.links-container
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+#band-photo {
+    background: url("images/Spacebarman-band-02-small.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 10em;
+    width: 10em;
+    border-radius: 5em;
+    margin-bottom: 1.5em;
 }
 
 .cta-button
@@ -226,11 +235,12 @@ body
     z-index: 1;
 }
 
-#release-links
+#links-text
 {
     padding: 5px;
     color: var(--light);
     font-weight: 100;
+    font-size: 1.5em;
 }
 
 #release-title
@@ -276,7 +286,7 @@ h2.ep-title
 {
     font-size: 3.6em;
     font-weight: normal;
-    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px var(--dark);
 }
 
 .footer
@@ -292,7 +302,8 @@ h2.ep-title
 .spacebarman-description
 {
     display: block;
-    color: rgba(255,255,255,0.05);
+    color: var(--light);
+    filter: opacity(.05);
     padding: 1em;
 }
 
