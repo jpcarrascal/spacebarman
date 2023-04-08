@@ -1,5 +1,5 @@
 const links = [
-    {"include":true,  name:"spotify",    text:"", link:"https://open.spotify.com/artist/1o8zzq05yXKrsdQUrMzZdc", icon:"logo-spotify.png"},
+    {"include":true,  name:"spotify",    text:"listen on", link:"https://open.spotify.com/artist/1o8zzq05yXKrsdQUrMzZdc", icon:"logo-spotify.png"},
     {"include":true,  name:"bandcamp",   text:"", link:"https://spacebarman.bandcamp.com/album/no-place-for-us", icon:"logo-bandcamp.png"},
     {"include":true,  name:"soundcloud", text:"", link:"https://soundcloud.com/spacebarman/sets/no-place-for-us-single", icon:"logo-soundcloud.png"},
     {"include":true,  name:"youtube",    text:"", link:"https://youtube.com/spacebarmanvideo", icon:"logo-youtube.png"},
@@ -48,10 +48,11 @@ function addLink(link) {
         linkElement.setAttribute('href', link.link);
         linkElement.setAttribute('target', '_blank');
         linkElement.setAttribute('class', 'link-item-link');
+        if(link.text != "")  {
+            linkElement.innerHTML = "<span class='link-item-text'>" + link.text + "</span>" ;
+        }
         if(link.icon != "") {
             linkElement.innerHTML = '<img src="images/' + link.icon + '" alt="' + link.name + ' logo" class="service-logo">';
-        } else {
-            linkElement.innerHTML = link.text;
         }
         linkDiv.appendChild(linkElement);
         listenDropdown.appendChild(linkDiv);
