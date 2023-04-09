@@ -91,7 +91,7 @@
         </div>
 
         <div class="links-text">
-            New single <span id="release-title">No Place For Us</span> Listen on:
+            New single <span id="release-title">No Place For Us</span>
         </div>
 
     </div>
