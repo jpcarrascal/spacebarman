@@ -302,7 +302,9 @@ h2.ep-title
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
-
+    #band-photo {
+        display: none;
+    }
 }
 
 /* Smartphones (portrait) ----------- */
@@ -316,4 +318,5 @@ h2.ep-title
 @media only screen and (max-height : 320px) {
 
 }
+
 
