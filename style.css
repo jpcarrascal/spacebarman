@@ -198,7 +198,7 @@ body
     display: block;
 }
 
-.link-item-text {
+.link-item-text-smaller {
     font-size: .75em;
 }
 
@@ -300,11 +300,6 @@ h2.ep-title
     }
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-
-}
-
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 560px) {
     #container, #hero-img, #listen-button {
@@ -312,17 +307,9 @@ h2.ep-title
     }
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-height : 320px) {
-
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    #band-photo {
+        display: none;
+    }
 }
-
-@media only screen and (min-device-width: 480px) 
-                   and (max-device-width: 640px) 
-                   and (orientation: landscape) {
-
-
-                    #band-photo {
-                        display: none;
-                    }
-                }

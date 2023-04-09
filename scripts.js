@@ -44,7 +44,10 @@ function addLink(link) {
         var linkDiv = document.createElement('div');
         linkDiv.setAttribute('class', 'link-item');
         if(link.text != "")  {
-            linkDiv.innerHTML = "<span class='link-item-text'>" + link.text + "</span>" ;
+            if(link.icon != "")
+                linkDiv.innerHTML = "<span class='link-item-text-smaller'>" + link.text + "</span>" ;
+            else
+                linkDiv.innerHTML = "<span class='link-item-text'>" + link.text + "</span>" ;
         }
         if(link.icon != "") {
             linkDiv.innerHTML += '<img src="images/' + link.icon + '" alt="' + link.name + ' logo" class="service-logo">';
