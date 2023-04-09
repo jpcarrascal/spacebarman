@@ -305,20 +305,12 @@ h2.ep-title
     #container, #hero-img, #listen-button {
         width: 100%;
     }
-
-    html {
-        font-size: 1.2em;
-    }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
     #band-photo {
         display: none;
-    }
-
-    html {
-        font-size: 1.2em;
     }
 }
 
