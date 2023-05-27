@@ -206,7 +206,8 @@ body
 }
 
 .link-item-text-smaller {
-    font-size: .75em;
+    font-size: 1em;
+    margin-right: 0.3em;
 }
 
 .link-item, #hero-text
