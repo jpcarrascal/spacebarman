@@ -14,7 +14,8 @@ Red: var(--accent)
     --dark: rgb(25, 23, 23);
     --mid: rgb(110, 100, 90);
     --light: rgba(210, 200, 190, 0.9);
-    --accent: rgb(194, 42, 19);
+    /* --accent: rgb(194, 42, 19); <- No Place For Us*/
+    --accent: rgb(70, 80, 19);
 }
 
 * { margin: 0; padding: 0; border: 0; }
@@ -192,11 +193,12 @@ body
 
 #release-title
 {
-    color: var(--dark);
-    background-color: var(--light);
-    padding-left: .2em;
-    padding-right: .2em;
+    color: var(--light);
+    background-color: var(--accent);
+    padding-left: .3em;
+    padding-right: .3em;
     text-shadow: none;
+    border-radius: .2em;
 }
 
 .service-logo
