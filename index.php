@@ -92,7 +92,7 @@
         </div>
 
         <div class="links-text">
-            New single <span id="release-title">No Place For Us</span>
+            Coming soon! New single <span id="release-title">El Ansia</span>
         </div>
 
     </div>

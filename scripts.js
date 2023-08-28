@@ -1,4 +1,5 @@
 const links = [
+    {"include":true,  name:"show",    text:"Preventa show Absenta del Raval", link:"https://entradium.com/events/ciclo-hola-indie-presenta-spacebarman-en-absenta-del-raval", icon:""},
     {"include":true,  name:"spotify",    text:"listen on", link:"https://open.spotify.com/artist/1o8zzq05yXKrsdQUrMzZdc", icon:"logo-spotify.png"},
     {"include":true,  name:"bandcamp",   text:"listen on", link:"https://spacebarman.bandcamp.com/album/no-place-for-us", icon:"logo-bandcamp.png"},
     {"include":true,  name:"soundcloud", text:"listen on", link:"https://soundcloud.com/spacebarman/sets/no-place-for-us-single", icon:"logo-soundcloud.png"},
