@@ -306,7 +306,7 @@ h2.ep-title
 @media only screen and (min-device-width : 100px) and (max-device-width : 480px) {
     html
     {
-        /*font-size: 0.8em;*/
+        font-size: 0.9em;
     }
 }
 
