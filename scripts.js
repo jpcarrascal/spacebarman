@@ -1,8 +1,8 @@
 const links = [
     {"include":true,  name:"show",    text:"Preventa show Absenta del Raval", link:"https://entradium.com/events/ciclo-hola-indie-presenta-spacebarman-en-absenta-del-raval", icon:""},
-    {"include":true,  name:"spotify",    text:"listen on", link:"https://open.spotify.com/artist/1o8zzq05yXKrsdQUrMzZdc", icon:"logo-spotify.png"},
-    {"include":true,  name:"bandcamp",   text:"listen on", link:"https://spacebarman.bandcamp.com/album/no-place-for-us", icon:"logo-bandcamp.png"},
-    {"include":true,  name:"soundcloud", text:"listen on", link:"https://soundcloud.com/spacebarman/sets/no-place-for-us-single", icon:"logo-soundcloud.png"},
+    {"include":true,  name:"spotify",    text:"listen on", link:"https://open.spotify.com/album/1NBr6aZbhbvWyyQJ3THhzP?si=a4uTPQ5oQjGoQdS2TyFzHw", icon:"logo-spotify.png"},
+    {"include":true,  name:"bandcamp",   text:"listen on", link:"https://spacebarman.bandcamp.com/album/el-ansia", icon:"logo-bandcamp.png"},
+    {"include":true,  name:"soundcloud", text:"listen on", link:"https://soundcloud.com/spacebarman/sets/el-ansia", icon:"logo-soundcloud.png"},
     {"include":true,  name:"youtube",    text:"", link:"https://youtube.com/spacebarmanvideo", icon:"logo-youtube.png"},
     {"include":false, name:"deezer", text:"", link:"https://www.deezer.com/en/artist/4246882", icon:"logo-deezer.png"},
     {"include":false, name:"amazon", text:"", link:"https://music.amazon.com/artists/B009VU5FNW/spacebarman", icon:"logo-amazon.png"},

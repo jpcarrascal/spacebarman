@@ -92,7 +92,7 @@
         </div>
 
         <div class="links-text">
-            Coming soon! New single <span id="release-title">El Ansia</span>
+            New single <span id="release-title">El Ansia</span> is out!
         </div>
 
     </div>
