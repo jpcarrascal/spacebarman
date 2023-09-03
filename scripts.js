@@ -1,16 +1,16 @@
 const links = [
-    {"include":true,  name:"show",    text:"Preventa show Absenta del Raval", link:"https://entradium.com/events/ciclo-hola-indie-presenta-spacebarman-en-absenta-del-raval", icon:""},
-    {"include":true,  name:"spotify",    text:"listen on", link:"https://open.spotify.com/album/1NBr6aZbhbvWyyQJ3THhzP?si=a4uTPQ5oQjGoQdS2TyFzHw", icon:"logo-spotify.png"},
-    {"include":true,  name:"bandcamp",   text:"listen on", link:"https://spacebarman.bandcamp.com/album/el-ansia", icon:"logo-bandcamp.png"},
-    {"include":true,  name:"soundcloud", text:"listen on", link:"https://soundcloud.com/spacebarman/sets/el-ansia", icon:"logo-soundcloud.png"},
-    {"include":true,  name:"youtube",    text:"", link:"https://youtube.com/spacebarmanvideo", icon:"logo-youtube.png"},
-    {"include":false, name:"deezer", text:"", link:"https://www.deezer.com/en/artist/4246882", icon:"logo-deezer.png"},
-    {"include":false, name:"amazon", text:"", link:"https://music.amazon.com/artists/B009VU5FNW/spacebarman", icon:"logo-amazon.png"},
-    {"include":false, name:"applumusic", text:"", link:"https://music.apple.com/us/artist/spacebarman/525428256", icon:"logo-applemusic.png"},
-    {"include":true, name:"bio", text:"Bio", link:"bio/", icon:""},
-    {"include":true, name:"facebook", text:"Facebook", link:"https://www.facebook.com/spacebarman", icon:""},
-    {"include":true, name:"instagram", text:"Instagram", link:"https://www.instagram.com/spacebarman", icon:""},
-    {"include":true, name:"subscribe", text:"Subscribe to our mailing list", link:"https://spacebarman.us21.list-manage.com/subscribe?u=eebe2ae40abe6e1bfafe680d8&id=8652641ff4", icon:""}
+    {"include":true,  "expires": "2023-09-03 21:00:00", name:"event",    text:"Preventa show Absenta del Raval", link:"https://entradium.com/events/ciclo-hola-indie-presenta-spacebarman-en-absenta-del-raval", icon:""},
+    {"include":true,  "expires": "no", name:"spotify",    text:"listen on", link:"https://open.spotify.com/album/1NBr6aZbhbvWyyQJ3THhzP?si=a4uTPQ5oQjGoQdS2TyFzHw", icon:"logo-spotify.png"},
+    {"include":true,  "expires": "no", name:"bandcamp",   text:"listen on", link:"https://spacebarman.bandcamp.com/album/el-ansia", icon:"logo-bandcamp.png"},
+    {"include":true,  "expires": "no", name:"soundcloud", text:"listen on", link:"https://soundcloud.com/spacebarman/sets/el-ansia", icon:"logo-soundcloud.png"},
+    {"include":true,  "expires": "no", name:"youtube",    text:"", link:"https://youtube.com/spacebarmanvideo", icon:"logo-youtube.png"},
+    {"include":false, "expires": "no", name:"deezer", text:"", link:"https://www.deezer.com/en/artist/4246882", icon:"logo-deezer.png"},
+    {"include":false, "expires": "no", name:"amazon", text:"", link:"https://music.amazon.com/artists/B009VU5FNW/spacebarman", icon:"logo-amazon.png"},
+    {"include":false, "expires": "no", name:"applumusic", text:"", link:"https://music.apple.com/us/artist/spacebarman/525428256", icon:"logo-applemusic.png"},
+    {"include":true,  "expires": "no", name:"bio", text:"Bio", link:"bio/", icon:""},
+    {"include":true,  "expires": "no", name:"facebook", text:"Facebook", link:"https://www.facebook.com/spacebarman", icon:""},
+    {"include":true,  "expires": "no", name:"instagram", text:"Instagram", link:"https://www.instagram.com/spacebarman", icon:""},
+    {"include":true,  "expires": "no", name:"subscribe", text:"Subscribe to our mailing list", link:"https://spacebarman.us21.list-manage.com/subscribe?u=eebe2ae40abe6e1bfafe680d8&id=8652641ff4", icon:""}
 ];
 
 window.onload = function() {
@@ -22,7 +22,15 @@ window.onload = function() {
     //    listenDropdown.style.display = "block";
 
     for(var i=0; i<links.length; i++) {
-        addLink(links[i]);
+        var localTime = Date.now();
+        if(links[i].expires !== "no") {
+            var expires = Date.parse(links[i].expires);
+            console.log("expires: " + expires + " localTime: " + localTime);
+            if(expires > localTime)
+                addLink(links[i]);
+        } else {
+            addLink(links[i]);
+        }
     }
 
     /*
