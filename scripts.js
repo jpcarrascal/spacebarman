@@ -1,5 +1,5 @@
 const links = [
-    {"include":true,  "expires": "2023-09-03 21:00:00", name:"event",    text:"Preventa show Absenta del Raval", link:"https://entradium.com/events/ciclo-hola-indie-presenta-spacebarman-en-absenta-del-raval", icon:""},
+    {"include":true,  "expires": "2023-10-06 21:00:00", name:"event",    text:"Preventa: Spacebarman+Flames of Foe", link:"https://entradium.com/events/flames-of-foe-spacebarman", icon:""},
     {"include":true,  "expires": "no", name:"spotify",    text:"listen on", link:"https://open.spotify.com/album/1NBr6aZbhbvWyyQJ3THhzP?si=a4uTPQ5oQjGoQdS2TyFzHw", icon:"logo-spotify.png"},
     {"include":true,  "expires": "no", name:"bandcamp",   text:"listen on", link:"https://spacebarman.bandcamp.com/album/el-ansia", icon:"logo-bandcamp.png"},
     {"include":true,  "expires": "no", name:"soundcloud", text:"listen on", link:"https://soundcloud.com/spacebarman/sets/el-ansia", icon:"logo-soundcloud.png"},
@@ -14,37 +14,18 @@ const links = [
 ];
 
 window.onload = function() {
-    var listenButton = document.querySelector('#listen-button');
-    var listenDropdown = document.querySelector('#listen-dropdown');
-    var tmpFomo = document.querySelector('#links-text');
-
-    //if(findGetParameter("from").localeCompare("mailchimpfomo") == 0)
-    //    listenDropdown.style.display = "block";
 
     for(var i=0; i<links.length; i++) {
         var localTime = Date.now();
         if(links[i].expires !== "no") {
             var expires = Date.parse(links[i].expires);
-            console.log("expires: " + expires + " localTime: " + localTime);
+            console.log("expires: " + (expires - localTime));
             if(expires > localTime)
                 addLink(links[i]);
         } else {
             addLink(links[i]);
         }
     }
-
-    /*
-    function findGetParameter(parameterName) {
-        var result = null,
-            tmp = [];
-        var items = location.search.substr(1).split("&");
-        for (var index = 0; index < items.length; index++) {
-            tmp = items[index].split("=");
-            if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-        }
-        return result;
-    }
-    */
 };
 
 function addLink(link) {
@@ -69,6 +50,5 @@ function addLink(link) {
 
         linkElement.appendChild(linkDiv);
         linksContainer.appendChild(linkElement);
-        console.log("adding " + link.name);
     }
 }
