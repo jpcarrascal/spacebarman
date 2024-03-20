@@ -69,8 +69,10 @@ p {
 
 #container
 {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 
