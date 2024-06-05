@@ -203,8 +203,9 @@ body
 
 .service-logo
 {
-    height: 5vh;
+    max-height: 5vh;
     display: block;
+    filter: grayscale(100%);
 }
 
 .link-item-text-smaller {

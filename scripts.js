@@ -1,15 +1,15 @@
 const links = [
-    {"include":true,  "expires": "2023-10-06 21:00:00", name:"event",    text:"Preventa: Spacebarman+Flames of Foe", link:"https://entradium.com/events/flames-of-foe-spacebarman", icon:""},
-    {"include":true,  "expires": "no", name:"spotify",    text:"listen on", link:"https://open.spotify.com/album/1NBr6aZbhbvWyyQJ3THhzP?si=a4uTPQ5oQjGoQdS2TyFzHw", icon:"logo-spotify.png"},
-    {"include":true,  "expires": "no", name:"bandcamp",   text:"listen on", link:"https://spacebarman.bandcamp.com/album/el-ansia", icon:"logo-bandcamp.png"},
-    {"include":true,  "expires": "no", name:"soundcloud", text:"listen on", link:"https://soundcloud.com/spacebarman/sets/el-ansia", icon:"logo-soundcloud.png"},
+    {"include":true,  "expires": "2024-06-21 08:30:00", name:"event",    text:"Concierto: Los Leales + Spacebarman", link:"https://dice.fm/event/l8abbp-los-leales-arg-spacebarman-21st-jun-sala-taro-barcelona-tickets", icon:""},
+    {"include":true,  "expires": "no", name:"spotify",    text:"", link:"https://open.spotify.com/album/1NBr6aZbhbvWyyQJ3THhzP?si=a4uTPQ5oQjGoQdS2TyFzHw", icon:"logo-spotify.png"},
+    {"include":true,  "expires": "no", name:"instagram", text:"", link:"https://www.instagram.com/spacebarman", icon:"logo-instagram.png"},
     {"include":true,  "expires": "no", name:"youtube",    text:"", link:"https://youtube.com/spacebarmanvideo", icon:"logo-youtube.png"},
+    {"include":true,  "expires": "no", name:"bandcamp",   text:"", link:"https://spacebarman.bandcamp.com/album/el-ansia", icon:"logo-bandcamp.png"},
+    {"include":true,  "expires": "no", name:"soundcloud", text:"", link:"https://soundcloud.com/spacebarman/sets/el-ansia", icon:"logo-soundcloud.png"},
     {"include":false, "expires": "no", name:"deezer", text:"", link:"https://www.deezer.com/en/artist/4246882", icon:"logo-deezer.png"},
     {"include":false, "expires": "no", name:"amazon", text:"", link:"https://music.amazon.com/artists/B009VU5FNW/spacebarman", icon:"logo-amazon.png"},
     {"include":false, "expires": "no", name:"applumusic", text:"", link:"https://music.apple.com/us/artist/spacebarman/525428256", icon:"logo-applemusic.png"},
     {"include":true,  "expires": "no", name:"bio", text:"Bio", link:"bio/", icon:""},
     {"include":true,  "expires": "no", name:"facebook", text:"Facebook", link:"https://www.facebook.com/spacebarman", icon:""},
-    {"include":true,  "expires": "no", name:"instagram", text:"Instagram", link:"https://www.instagram.com/spacebarman", icon:""},
     {"include":true,  "expires": "no", name:"subscribe", text:"Subscribe to our mailing list", link:"https://spacebarman.us21.list-manage.com/subscribe?u=eebe2ae40abe6e1bfafe680d8&id=8652641ff4", icon:""}
 ];
 
