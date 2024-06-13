@@ -1,5 +1,6 @@
 const links = [
-    {"include":true,  "expires": "2024-06-13 16:30:00", name:"event",    text:"DBASS - Sonar", link:"https://dbass.link/?session=sonarintro", icon:""},
+    {"include":true,  "expires": "2024-06-13 16:30:00", name:"event",    text:"Count-Me-In - Sonar", link:"https://count-me-in.azurewebsites.net/sequencer?room=sonarintro", icon:""},
+    {"include":true,  "expires": "2024-06-13 16:30:00", name:"event",    text:"DBASS - Sonar", link:"https://dbass.link/sequencer?room=sonarintro", icon:""},
     {"include":true,  "expires": "2024-06-21 08:30:00", name:"event",    text:"Concierto: Los Leales + Spacebarman", link:"https://dice.fm/event/l8abbp-los-leales-arg-spacebarman-21st-jun-sala-taro-barcelona-tickets", icon:""},
     {"include":true,  "expires": "no", name:"spotify",    text:"", link:"https://open.spotify.com/album/1NBr6aZbhbvWyyQJ3THhzP?si=a4uTPQ5oQjGoQdS2TyFzHw", icon:"logo-spotify.png"},
     {"include":true,  "expires": "no", name:"instagram", text:"", link:"https://www.instagram.com/spacebarman", icon:"logo-instagram.png"},
