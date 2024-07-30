@@ -13,7 +13,8 @@ Red: var(--accent)
 :root {
     --dark: rgb(25, 24, 23);
     --mid: rgb(110, 100, 90);
-    --light: rgba(210, 207, 190, 0.9);
+    /*--light: rgba(210, 207, 190, 0.9);*/
+    --light: rgba(210, 207, 210, 0.8);
     /* --accent: rgb(194, 42, 19); <- No Place For Us*/
     --accent: rgb(180, 150, 0);
 }
@@ -50,12 +51,7 @@ html
     height: 100%;
     font-family: century-gothic, sans-serif;
     font-size: 1.5em;
-    background-color: var(--mid);
-    background: url("images/ElAnsia-bg.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
 }
 
 body
@@ -68,8 +64,12 @@ body
     margin: 0;
     overflow: hidden;
     color: var(--light);
-    background-color: transparent;
-
+    background-color: var(--mid);
+    background: url("images/ElAnsia-bg-bw.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
     width: 100%;
     height: 100%;
@@ -267,8 +267,10 @@ body
 }
 
 #band-photo {
-    background: url("images/Spacebarman-duotone.jpg");
-    filter: hue-rotate(-30deg);
+    background: url("images/Spacebarman-solo-purple.jpg");
+    filter: hue-rotate(30deg);
+    animation: rainbow 4s steps(36) infinite;
+    -webkit-animation: rainbow 4s steps(36) infinite;
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center;
@@ -278,6 +280,27 @@ body
     border: .2em solid var(--light);
     margin-top: 5vh;
 }
+
+
+/* -------- Hue animation -------- */
+
+@-webkit-keyframes rainbow {
+    from { -webkit-filter:hue-rotate(10deg); }
+      to { -webkit-filter:hue-rotate(360deg); }
+ }
+ 
+ @keyframes rainbow {
+  from {
+     -webkit-filter:hue-rotate(10deg);
+             filter:hue-rotate(10deg);
+     }
+   to {
+     -webkit-filter:hue-rotate(360deg);
+             filter:hue-rotate(360deg);
+     }
+ }
+
+/* -------- Hue animation -------- */
 
 #close-dropdown
 {
