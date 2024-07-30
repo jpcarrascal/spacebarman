@@ -12,8 +12,9 @@ Red: var(--accent)
 
 :root {
     --dark: rgb(25, 24, 23);
-    --mid: rgb(110, 100, 90);
-    /*--light: rgba(210, 207, 190, 0.9);*/
+    /*--mid: rgb(110, 100, 90);
+    --light: rgba(210, 207, 190, 0.9);*/
+    --mid: rgb(110, 107, 110);
     --light: rgba(210, 207, 210, 0.8);
     /* --accent: rgb(194, 42, 19); <- No Place For Us*/
     --accent: rgb(180, 150, 0);
@@ -65,7 +66,7 @@ body
     overflow: hidden;
     color: var(--light);
     background-color: var(--mid);
-    background: url("images/ElAnsia-bg-bw.jpg") no-repeat center center fixed;
+    background: url("images/ai.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -307,7 +308,8 @@ body
     color: var(--dark);
 }
 
-.link-item:hover
+#links-main .link-item:hover,
+#links-social .link-item:hover
 {
     background-color: var(--mid);
 }
