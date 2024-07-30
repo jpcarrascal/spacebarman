@@ -213,7 +213,8 @@ body
     margin-right: 0.25em;
 }
 
-.link-item, #hero-text
+#links-main .link-item,
+#links-main #hero-text
 {
     cursor: pointer;
     display: block;
@@ -227,11 +228,40 @@ body
     background-color: var(--light);
     color: var(--dark);
     padding: 0;
-    margin: .15em;
+    margin: .3em;
     border-radius: .1em;
 }
 
+#links-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#links-social .link-item
+{
+    cursor: pointer;
+    display: block;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-weight: bold;
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 0;
+    margin: .3em;
+    border-radius: 50px;
+}
+
 #hero-text {
+    font-size: 1.5em;
     background-color: transparent;
     color: var(--light);
 }
