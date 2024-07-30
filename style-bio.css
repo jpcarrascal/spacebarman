@@ -15,6 +15,7 @@ html
 
 body
 {
+    background: none;
     overflow-y: scroll;
     display: flex;
     min-height: 100vh;
@@ -53,7 +54,6 @@ p {
     text-align: left;
     overflow: wrap;
     word-break: break-word;
-    background-color: #171719;
     margin: 0;
 }
 
