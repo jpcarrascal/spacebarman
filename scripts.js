@@ -1,6 +1,5 @@
 const links = [
-    {"include":"links-main",  "expires": "2024-06-13 10:30:00", name:"event",    text:"Sonar demo: Count-Me-In", link:"https://count-me-in.azurewebsites.net/sequencer?room=sonarintro", icon:""},
-    {"include":"links-main",  "expires": "2024-06-13 10:30:00", name:"event",    text:"Sonar demo: DBASS", link:"https://dbass.link/sequencer?room=sonarintro", icon:""},
+    {"include":"links-main",  "expires": "2024-10-25 00:00:00", name:"single",    text:"Single: The Place You'll Never See", link:"https://open.spotify.com/album/7GWqtUxssw6k91Gk85XnS2?si=p2E8tL2vTX-7GcQglBCgYg", icon:""},
     {"include":"links-main",  "expires": "2024-06-21 08:30:00", name:"event",    text:"Concierto: Los Leales + Spacebarman", link:"https://dice.fm/event/l8abbp-los-leales-arg-spacebarman-21st-jun-sala-taro-barcelona-tickets", icon:""},
     {"include":"links-social",  "expires": "no", name:"spotify",    text:"", link:"https://open.spotify.com/album/1NBr6aZbhbvWyyQJ3THhzP?si=a4uTPQ5oQjGoQdS2TyFzHw", icon:"logo-spotify-small.png"},
     {"include":"links-social",  "expires": "no", name:"instagram", text:"", link:"https://www.instagram.com/spacebarman", icon:"logo-instagram-small.png"},
