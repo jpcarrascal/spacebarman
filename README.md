@@ -5,3 +5,5 @@ Website (2023)
 - https://www.toneden.io/
 - https://www.linkfire.com/
 - https://smarturl.it/
+
+Local test: npx http-server -o -c-1 -p 8080 .
