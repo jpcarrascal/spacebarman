@@ -1,5 +1,5 @@
 const links = [
-    {"include":"links-main",  "expires": "2025-01-16 00:00:00", name:"event",    text:"Spacebarman en MadCool Talent", link:"https://madcooltalent.com/gallery/986917/210162/730568507", icon:""},
+    {"include":"links-main",  "expires": "2025-01-12 00:00:00", name:"event",    text:"Spacebarman en MadCool Talent", link:"https://madcooltalent.com/gallery/986917/210162/730568507", icon:""},
     {"include":"links-main",  "expires": "2024-12-25 00:00:00", name:"single",    text:"New Single: La Sed", link:"https://open.spotify.com/track/74av74FhDBjOe5CeUTx970?si=66ff1f9b3e5d4d3b", icon:""},
     {"include":"links-main",  "expires": "2024-06-21 08:30:00", name:"event",    text:"Concierto: Los Leales + Spacebarman", link:"https://dice.fm/event/l8abbp-los-leales-arg-spacebarman-21st-jun-sala-taro-barcelona-tickets", icon:""},
     {"include":"links-social",  "expires": "no", name:"spotify",    text:"", link:"https://open.spotify.com/album/1NBr6aZbhbvWyyQJ3THhzP?si=a4uTPQ5oQjGoQdS2TyFzHw", icon:"logo-spotify-small.png"},
