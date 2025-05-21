@@ -1,5 +1,6 @@
-# Spacebarman Website (2023)
-Website (2023)
+# Spacebarman Website
+- ~~Website (2023)~~
+- Updated on May 2025
 
 ### Link aggregators (to consider):
 - https://www.toneden.io/
