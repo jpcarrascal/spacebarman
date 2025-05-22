@@ -7,4 +7,4 @@
 - https://www.linkfire.com/
 - https://smarturl.it/
 
-Local test: npx http-server -o -c-1 -p 8080 docs
+Local test: npx http-server -o -c-1 -p 8080 docs/
