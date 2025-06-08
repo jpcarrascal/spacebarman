@@ -1,6 +1,12 @@
 # Spacebarman Website
 - ~~Website (2023)~~
-- Updated on May 2025
+- Redesigned on May 2025
+- Last updated on June 8th, 2025
+
+### URL Structure
+- Homepage: `/`
+- English Biography: `/bio/`
+- Spanish Biography: `/bio-es/`
 
 ### Link aggregators (to consider):
 - https://www.toneden.io/
