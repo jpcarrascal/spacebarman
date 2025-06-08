@@ -390,7 +390,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2rem;  /* Return to original gap */
+    margin-bottom: 1rem;  /* Add some margin but less on mobile */
+}
+
+/* Apply larger spacing only on desktop */
+@media (min-width: 768px) {
+    .header-social {
+        gap: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 
@@ -407,14 +416,28 @@ footer {
 }
 
 .header-icon {
-    font-size: 4rem;
+    font-size: 4rem;  /* Return to original size */
     color: var(--black);
     transition: color 0.2s, transform 0.2s;
 }
 
+/* Make icons larger on desktop only */
+@media (min-width: 768px) {
+    .header-icon {
+        font-size: 5rem;
+    }
+}
+
 .footer-icon:hover, .header-icon:hover {
     color: var(--light-magenta);
-    transform: scale(1.2);
+    transform: scale(1.2);  /* Return to original scale */
+}
+
+/* Apply enhanced hover effect only on desktop */
+@media (min-width: 768px) {
+    .footer-icon:hover, .header-icon:hover {
+        transform: scale(1.25);
+    }
 }
 
 /* Media Queries */
