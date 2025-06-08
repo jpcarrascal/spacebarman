@@ -1,10 +1,10 @@
 var news = {
-    expires: "2025-05-31 00:00:00",
+    expires: "2025-07-20 00:00:00",
     title: "New Single!",
-    text: "Los Monstruos de Esta Ciudad",
-    image: "https://f4.bcbits.com/img/a2589993008_2.jpg",
-    cta: "https://open.spotify.com/track/1I8hAZ9RmHRozAAz9jRmX4?si=f5f80c105b874faf",
-    ctaText:"Listen Now"
+    text: "Wanderlust",
+    image: "https://f4.bcbits.com/img/a2491478617_10.jpg",
+    cta: "#",
+    ctaText:"Coming soon!"
 };
 
 
@@ -22,7 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.news-text').innerHTML = `
                 <h2>${news.title}</h2>
                 <p>${news.text}</p>`;
-            document.querySelector('.news-cta').href = news.cta;
+            if (news.cta !== "#") {
+                document.querySelector('.news-cta').href = news.cta;
+            } else {
+                document.querySelector('.news-cta').removeAttribute('href');
+            }
             document.querySelector('.news-cta').innerHTML = news.ctaText;
         }
 });
