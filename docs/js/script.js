@@ -3,8 +3,8 @@ var news = {
     title: "New Single!",
     text: "Wanderlust",
     image: "https://f4.bcbits.com/img/a2491478617_10.jpg",
-    cta: "#",
-    ctaText:"Coming soon!"
+    cta: "https://open.spotify.com/track/4t7geusWdLOBLjlQLBczDB?si=9d4c942fef05452d",
+    ctaText:"Listen now!"
 };
 
 
