@@ -1,9 +1,9 @@
 var news = {
-    expires: "2025-07-20 00:00:00",
+    expires: "2025-09-15 00:00:00",
     title: "New Single!",
-    text: "Wanderlust",
-    image: "https://f4.bcbits.com/img/a2491478617_10.jpg",
-    cta: "https://open.spotify.com/track/4t7geusWdLOBLjlQLBczDB?si=9d4c942fef05452d",
+    text: "Sometimes We Go to Dark Places",
+    image: "https://f4.bcbits.com/img/a3957884858_16.jpg",
+    cta: "https://open.spotify.com/track/4um5oqbPTpHtc8mRrs7BnH?si=2a419193aafd4284",
     ctaText:"Listen now!"
 };
 
