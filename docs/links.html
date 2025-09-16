@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15242862-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+
+      gtag('config', 'UA-15242862-2');
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spacebarman links — quick access to music, socials and newsletter">
+
+    <title>Spacebarman — Links</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+    /* Page background (body) and full-viewport overlay for links landing page */
+    body.links-page {
+      background-image: url('images/JP-multi.jpg');
+      background-size: cover !important; /* preserves aspect ratio and fills the area */
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      -o-background-size: cover !important;
+      background-position: center center !important;
+      background-position-x: center !important;
+      background-position-y: center !important;
+      background-repeat: no-repeat !important; /* do not tile */
+      background-attachment: scroll;
+    }
+
+    body.links-page::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: rgba(17,17,17,0.35);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .links-landing { 
+      position: relative; 
+      min-height: 100vh; 
+      padding-top: calc(1.5rem + env(safe-area-inset-top, 0px)); /* add top padding and account for device safe area */
+    }
+
+    /* .links-landing styles removed as they are now handled by body.links-page */
+
+    /* Make header title transparent background and white text for readability over the background image */
+    .links-landing .band-name {
+        color: #ffffff !important; /* white text */
+        background: transparent !important; /* transparent background */
+        /* permanent black shadow, slightly closer to the text */
+        text-shadow: 0 1px 3px rgba(0,0,0,0.95) !important;
+    }
+
+    /* Make the news-card elements more compact on mobile */
+    .news-card { display:flex; gap:1rem; align-items:center; }
+    .news-image { max-width: 80px; height: auto; border-radius:6px; }
+    .news-text h2 { font-size: 1.1rem; margin-bottom: 0.2rem; }
+    .news-text p { font-size: 0.95rem; margin:0; }
+
+    /* Center content vertically for short pages on mobile */
+    @media (max-width: 480px) {
+        body { padding-top: 1rem; }
+        .logo-container .band-name { font-size: 1.8rem; }
+    }
+    </style>
+</head>
+<body class="links-page">
+
+    <div class="main-wrapper links-landing">
+        <header class="band-header">
+            <div class="logo-container">
+                <a href="index.html" class="title-link">
+                    <h1 class="band-name">SPACEBARMAN</h1>
+                </a>
+            </div>
+        </header>
+
+        <main class="container">
+
+            <!-- News-driven first link. This block will be populated by js/script.js if the "news" object has an active item -->
+            <section class="news">
+                <div class="news-card">
+                    <div class="news-image-container">
+                        <img class="news-image" />
+                    </div>
+                    <div>
+                        <div class="news-card-art-info">
+                            <div class="news-text"></div>
+                        </div>
+                        <a href="#" class="brutalist-button news-cta" target="_blank">Open</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Simple stacked buttons for mobile QR landing -->
+            <div class="button-row">
+                <a href="https://instagram.com/spacebarman" target="_blank" class="brutalist-button instagram">
+                    <i class="fab fa-instagram"></i> Follow on Instagram
+                </a>
+            </div>
+
+            <div class="button-row">
+                <a href="https://spacebarman.us21.list-manage.com/subscribe?u=eebe2ae40abe6e1bfafe680d8&id=8652641ff4" target="_blank" class="brutalist-button subscribe">
+                    <i class="fas fa-envelope"></i> Subscribe to News
+                </a>
+            </div>
+
+            <div class="button-row">
+                <a href="https://open.spotify.com/artist/1o8zzq05yXKrsdQUrMzZdc?si=lsfu21z_R3moUY6ddcKHRg" target="_blank" class="brutalist-button spotify">
+                    <i class="fab fa-spotify"></i> Follow on Spotify
+                </a>
+            </div>
+
+            <div class="button-row">
+                <a href="https://youtube.com/spacebarmanvideo" target="_blank" class="brutalist-button youtube">
+                    <i class="fab fa-youtube"></i> Follow on YouTube
+                </a>
+            </div>
+
+            <div class="button-row">
+                <a href="mailto:info@spacebarman.com" class="brutalist-button" target="_blank">
+                    <i class="fas fa-paper-plane"></i> Email us
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Spacebarman. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
