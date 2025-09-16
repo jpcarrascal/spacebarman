@@ -31,12 +31,55 @@
 
 body {
     font-family: 'Lexend Mega', 'Space Mono', monospace;
-    background-color: var(--dark-cyan);
+    background-color: var(--black);
     color: var(--black);
     line-height: 1.6;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Site-wide JP-multi background & theme for /docs pages */
+body {
+    background-image: url('../images/JP-multi.jpg');
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(17,17,17,0.35);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Ensure header and main content sit above the overlay */
+.band-header,
+.main-wrapper,
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Make the site title white with a permanent black shadow */
+.band-name {
+    color: #ffffff !important;
+    background: transparent !important;
+}
+
+/* Make all buttons use black text/icons by default on the site */
+.brutalist-button {
+    color: var(--black) !important;
+}
+.brutalist-button i {
+    color: var(--black) !important;
 }
 
 .main-wrapper {
@@ -179,47 +222,47 @@ h2 {
     color: #1DB954;
 }
 .spotify:hover {
-    background-color: #1DB954;
+    background-color: var(--light-magenta);
     color: white;
 }
 
 .youtube {
-    color: #FF0000;
+    color: var(--light-magenta);
 }
 .youtube:hover {
-    background-color: #FF0000;
+    background-color: var(--light-magenta);
     color: white;
 }
 
 .instagram {
-    color: #E1306C;
+    color: var(--light-magenta);
 }
+
 .instagram:hover {
-    background-color: #E1306C;
-    color: white;
+    background-color: var(--light-magenta);
 }
 
 .facebook {
-    color: #1877F2;
+    color: var(--light-magenta);
 }
 .facebook:hover {
-    background-color: #1877F2;
+    background-color: var(--light-magenta);
     color: white;
 }
 
 .bandcamp {
-    color: #629aa9;
+    color: var(--light-magenta);
 }
 .bandcamp:hover {
-    background-color: #629aa9;
+    background-color: var(--light-magenta);
     color: white;
 }
 
 .soundcloud {
-    color: #FF7700;
+    color: var(--light-magenta);
 }
 .soundcloud:hover {
-    background-color: #FF7700;
+    background-color: var(--light-magenta);
     color: white;
 }
 
@@ -235,15 +278,15 @@ h2 {
     color: var(--dark-cyan);
 }
 .bio:hover {
-    background-color: var(--dark-cyan);
+    background-color: var(--light-magenta);
     color: white;
 }
 
 .subscribe {
-    color: #9147FF;
+    color: var(--light-magenta);
 }
 .subscribe:hover {
-    background-color: #9147FF;
+    background-color: var(--light-magenta);
     color: white;
 }
 
@@ -371,9 +414,10 @@ h2 {
 
 /* Footer */
 footer {
+    color: var(--white);
     margin-top: 4rem;
     padding-top: 2rem;
-    border-top: 4px solid var(--black);
+    border-top: 4px solid var(--white);
     text-align: center;
     width: 100%;
     box-sizing: border-box;
@@ -417,7 +461,7 @@ footer {
 
 .header-icon {
     font-size: 4rem;  /* Return to original size */
-    color: var(--black);
+    color: var(--light-magenta);
     transition: color 0.2s, transform 0.2s;
 }
 
@@ -439,6 +483,41 @@ footer {
         transform: scale(1.25);
     }
 }
+
+/* ------------------------
+   Page-specific overrides
+   ------------------------ */
+
+/* Links landing page */
+body.links-page .links-landing {
+    position: relative;
+    min-height: 100vh;
+    padding-top: calc(1.5rem + env(safe-area-inset-top, 0px));
+}
+body.links-page .container {
+    padding: 1.5rem;
+}
+body.links-page .brutalist-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.9rem;
+    color: var(--black) !important;
+}
+body.links-page .brutalist-button i {
+    margin-right: 0.6rem;
+    color: var(--black) !important;
+}
+body.links-page .news-card { display:flex; gap:1rem; align-items:center; }
+body.links-page .news-image { max-width: 80px; height: auto; border-radius:6px; }
+body.links-page .news-text h2 { font-size: 1.1rem; margin-bottom: 0.2rem; }
+body.links-page .news-text p { font-size: 0.95rem; margin:0; }
+
+@media (max-width: 480px) {
+    body.links-page { padding-top: 1rem; }
+    body.links-page .logo-container .band-name { font-size: 1.8rem; }
+}
+
+/* End page-specific overrides */
 
 /* Media Queries */
 @media (max-width: 1200px) {

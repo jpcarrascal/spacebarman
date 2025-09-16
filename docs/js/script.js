@@ -1,5 +1,5 @@
 var news = {
-    expires: "2025-09-15 00:00:00",
+    expires: "2025-09-31 00:00:00",
     title: "New Single!",
     text: "Sometimes We Go to Dark Places",
     image: "https://f4.bcbits.com/img/a3957884858_16.jpg",
