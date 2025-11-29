@@ -350,6 +350,27 @@ h2 {
     border-radius: 8px;
 }
 
+/* Video mode styling for YouTube embeds */
+.news-card.video-mode {
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.news-card.video-mode iframe {
+    height: 400px;
+}
+
+/* Mobile responsive video height */
+@media (max-width: 768px) {
+    .news-card.video-mode iframe {
+        height: calc(100vw * 9 / 16);
+        max-height: 300px;
+    }
+}
+
 .news-card-art-info {
     display: flex;
     flex-direction: column;
@@ -473,6 +494,41 @@ footer {
 .footer-icon:hover, .header-icon:hover {
     color: var(--light-magenta);
     transform: scale(1.2);  /* Return to original scale */
+}
+
+.instagram-inverted, .spotify-inverted, .youtube-inverted {
+    display: inline-block;
+    flex: 1;
+    padding: 1rem 1.5rem;
+    background-color: var(--light-magenta);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.375rem;
+    border: 4px solid var(--black);
+    box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) 0 var(--black);
+    transition: box-shadow 0.2s, background-color 0.2s, color 0.2s, top 0.2s, left 0.2s;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 140px;
+}
+
+.instagram-inverted:hover, .spotify-inverted:hover, .youtube-inverted:hover {
+    background-color: white;
+    color: var(--light-magenta);
+    box-shadow: calc(var(--shadow-offset-x) + 2px) calc(var(--shadow-offset-y) + 2px) 0 var(--black);
+    top: -2px;
+    left: -2px;
+    transform: rotateZ(0.3deg);
+}
+
+.instagram-inverted:active, .spotify-inverted:active, .youtube-inverted:active {
+    box-shadow: calc(var(--shadow-offset-x) - 2px) calc(var(--shadow-offset-y) - 2px) 0 var(--black);
+    top: 2px;
+    left: 2px;
 }
 
 /* Apply enhanced hover effect only on desktop */
