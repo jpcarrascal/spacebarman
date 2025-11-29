@@ -1,7 +1,7 @@
 # Spacebarman Website
 - ~~Website (2023)~~
 - Redesigned on May 2025
-- Last updated on June 8th, 2025
+- Last updated on Nov 29, 2025
 
 ### URL Structure
 - Homepage: `/`
