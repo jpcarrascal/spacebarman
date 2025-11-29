@@ -458,15 +458,15 @@ footer {
 }
 
 .header-icon {
-    font-size: 4rem;  /* Return to original size */
-    color: var(--light-magenta);
+    font-size: 6rem;  /* Increased by 50% from 4rem */
+    color: white;
     transition: color 0.2s, transform 0.2s;
 }
 
 /* Make icons larger on desktop only */
 @media (min-width: 768px) {
     .header-icon {
-        font-size: 5rem;
+        font-size: 7.5rem;  /* Increased by 50% from 5rem */
     }
 }
 
